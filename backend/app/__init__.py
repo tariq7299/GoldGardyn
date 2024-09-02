@@ -6,8 +6,8 @@ from flask_session import Session
 
 def cors(app):
     # Apply CORS to the app
-    # CORS(app, resources={r'/*': {'origins': '*'}}, supports_credentials=True)
-    CORS(app, resources={r'/api/*': {"origins": "*"}}, supports_credentials=True)
+    CORS(app, resources={r'/*': {'origins': '*'}}, supports_credentials=True)
+    # CORS(app, resources={r'/api/*': {"origins": "*"}}, supports_credentials=True)
     # CORS(app, resources={r'/api/*': {'origins': 'http://197.57.100.1:80'}}, supports_credentials=True)
     # CORS(app, resources={r'/api/*': {'origins': 'http://192.168.1.20:80'}}, supports_credentials=True)
     # CORS(app, resources={r'/api/*': {'origins': 'http:localhost'}}, supports_credentials=True)
